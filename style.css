@@ -1,0 +1,611 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Varela Round", system-ui;
+    font-weight: 400;
+    background-color: rgb(4, 0, 29);
+    color: rgb(243, 240, 240);
+    z-index: 1;
+}
+
+/*//////////////////////H E A D E R  &  N A V///////////////////////////*/
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.navcontainer{
+    position: relative;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    z-index: 1000;
+    padding: 30px 100px;
+}
+.navLogo{
+    cursor: pointer;
+ }
+.navMenu{
+    display: flex;
+}
+.navList{
+    display: flex;
+    column-gap: 1.9rem;
+}
+.navList a{
+    color: goldenrod;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.navList a:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered;
+    transition: .4s;
+}
+.navClose{
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    color: goldenrod;
+    display: none;
+}
+.navToggle i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    color: goldenrod;
+    display: none;
+}
+section{
+    padding: 15% 10%;
+}
+.home{
+    width: 80%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5rem;
+    align-items: center;
+}
+.homeImg img{
+    max-width: 80%;
+    width: 600px;
+    height: auto;
+}
+.homeText h1{
+    font-family: "Kanit", system-ui;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: orangered;
+}
+.homeText h1 span{
+    font-family: "Engagement", system-ui;
+    font-size: 4.5rem;
+    font-weight: 950;
+    color: gold;
+    padding-left: 10%;
+}
+.homeText h3{
+    font-family: "Varela Round", system-ui;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: greenyellow;
+    padding-left: 13%;
+}
+.homeText h3 span{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: orangered;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 45px;
+    margin-left: 15%;
+    font-family: "Kanit", system-ui;
+    font-weight: 800;
+    font-size: 20px;
+    background-color: rgb(8, 7, 7);
+    color: orangered;
+    border: 2px solid orangered;
+    border-radius: 15px;
+}
+.btn:hover{
+    transform: scale(1.2) translateY(5px);
+    transition: .3s;
+    box-shadow: 0 0 15px orangered;
+    color: black;
+    text-shadow: 0 0 15px orangered;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+.aboutImg img{
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+.aboutText span{
+    color: orangered;
+    font-weight: 700;
+    cursor: pointer;
+}
+.aboutText h2{
+    color: gold;
+    text-transform: capitalize;
+    font-family: "Caveat", system-ui;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 600;
+    line-height: 2.5rem;
+    margin-top: 25px;
+    border: none;
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 18px orangered;
+}
+.menuHeading{
+    text-align: center;
+}
+.menuHeading h2{
+    color: orangered;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.menuHeading i{
+    text-align: center;
+    justify-content: center;
+    color: orangered;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.menuHeading p{
+    color: gold;
+    font-weight: 550;
+}
+.comboImg img{
+    max-width: 100%;
+    width: 580px;
+    height: auto;
+}
+.menuContainer{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 2.9rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.combo{
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid orangered;
+    padding: 40px 20px;
+    border-radius: 18px;
+}
+.combo h3{
+    margin-top: 25px;
+    font-size: 1.5rem;
+    font-weight: 750;
+    color: orangered;
+    margin-bottom: 20px;
+}
+.combo h2,i{
+    font-size: 1.3rem;
+    font-weight: 650;
+    font-family: "Afacad Flux", sans-serif;
+    color: gold;
+    justify-content: center;
+    align-items: center;
+}
+.combo span{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: aqua;
+    font-weight: 500;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+.cart i{
+    font-size: 1.9rem;
+    color: rgb(249, 12, 12);
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    padding: 8px 20px;
+    margin-bottom: 19px;
+}
+.cart i:hover{
+    color: orangered;
+    box-shadow: 0 0 15px orangered;
+    border: none;
+}
+.rating i{
+    font-size: 15px;
+    color: orange;
+    margin-top: 1.5rem;
+}
+.combo p{
+    background-color: orangered;
+    color: rgb(4, 0, 29);
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 0 0.5rem 0 0.5rem;
+}
+.todayMenu{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-gap: 2rem;
+    align-items: center;
+}
+.todaymenuHeading h2,i{
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: orangered;
+    font-weight: 1000;
+    font-family: "Varela Round", system-ui;
+}
+.todaymenuHeading p{
+    text-align: center;
+    justify-content: center;
+    color: goldenrod;
+    margin-bottom: 2rem;
+}
+.todaymenuHeading span{
+    color: aqua;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.sweet{
+    max-height: 150px;
+}
+.flaw{
+    max-height: 180px;
+}
+.serviceContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 1.5rem;
+    margin-top: 6rem;
+}
+.serviceTag{
+    text-align: center;
+    padding: 20px 30px;
+    border: 2px solid orangered;
+    border-radius: 18px;
+}
+.serviceTag img{
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.serviceTag h3{
+    margin: 8px 0 15px;
+    color: orangered;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "Afacad Flux", system-ui;
+    margin-top: 1.5rem;
+}
+.serviceTag p{
+    padding: 8px 12px;
+    color: gold;
+    font-size: 1rem;
+    font-weight: 550;
+    line-height: 1.5rem;
+}
+.p1{
+    margin-top: 6.2rem;
+}
+.nst{
+    background-color: orangered;
+    padding: 70px 0;
+    text-align: center;
+    width: 66%;
+    margin: 100px auto;
+    border-radius: 18px;
+    line-height: 2rem;
+}
+.nst h2{
+    background-color: orangered;
+    color: rgb(4, 0, 29);
+    font-weight: 650;
+}
+.nst span{
+    background-color: orangered;
+    color: rgb(6, 6, 88);
+    font-weight: 850;
+    margin-top: 25px;
+}
+.btn2{
+    background-color: orangered;
+    border: 2px solid rgb(4, 0, 29);
+    padding: 5px 15px;
+    line-height: 5rem;
+    border-radius: 15px;
+    color: rgb(4, 0, 29);
+    font-size: 15px;
+    font-weight: 750;
+}
+.btn2:hover{
+    background-color: rgb(4, 0, 29);
+    color: orangered;
+    border: 2px solid gold;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    padding: 10px 0;
+}
+.column{
+    width: 25%;
+}
+.column h4{
+    color: goldenrod;
+    font-family: "Afacad Flux", system-ui;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+.column h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background-color: orangered;
+}
+.column ul li:not(last-child){
+    margin-bottom: 15px;
+}
+.column ul li a{
+    color: aqua;
+    font-size: 1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+.column ul li a:hover{
+    color: gold;
+    transform: translateX(-12px);
+    font-weight: 650;
+}
+.column .social{
+    width: 40px;
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.column .social a{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.column .social a i{
+    border: 2px solid orangered;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.column .social a i:hover{
+    box-shadow: 0 0 15px gold;
+    border: none;
+    font-size: 25px;
+    transition: .4s;
+    color: gold;
+}
+footer {
+    background-color: rgb(4, 0, 29);
+    color: goldenrod;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    border: 2px solid orangered;
+    margin: 20px 40px;
+    border-radius: 15px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-family: "Varela Round", system-ui;
+    font-weight: 450;
+    color: goldenrod;
+}
+footer p span{
+    color: orangered;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.customer-reviews {
+    padding: 5% 10%;
+    background-color: rgb(4, 0, 29);
+    color: goldenrod;
+    text-align: center;
+}
+
+.review-heading h2 {
+    color: orangered;
+    font-size: 2.5rem;
+    font-weight: 900;
+    
+}
+
+.review-heading p {
+    color: gold;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.review {
+    background-color: rgb(4, 0, 29);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px orangered;
+}
+
+.review-img img {
+    width: 100px;
+    height: 120px;
+    margin-top: 15px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+}
+
+.review h3 {
+    color: gold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.rating i {
+    color: orange;
+    margin: 0 2px;
+}
+
+.review p {
+    font-size: 1rem;
+    color: goldenrod;
+    margin-top: 10px;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+
+@media (max-width:1560px ){
+    header{
+        padding: 15px 30px;
+    }
+    
+}
+@media (max-width:1140px){
+    section{
+        padding: 50px 8%;
+    }
+    .home{
+        align-items: center;
+        grid-gap: .8rem;
+    }
+    .homeImg img{
+        max-width: 100%;
+        width: 400px;
+        height: auto;
+    }
+    .navToggle i{
+        display: initial;
+        color: orangered;
+    }
+    header .navList{
+        position: absolute;
+        top: -400px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: .3s;
+    }
+    header .navList.active{
+        top: 70px;
+    }
+    .navList a{
+        padding: 1.5rem;
+        display: block;
+    }
+    .column{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:720px ){
+    header{
+        padding: 10px 16px;
+    }
+    .navcontainer{
+        height: 25px;
+    }
+    .home{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .aboutImg{
+        order: 2;
+    }
+    .aboutText h2{
+        font-size: 1rem;
+        font-weight: 650;
+        line-height: 1.5rem;
+    }
+    section{
+        padding: 100px 7%;
+    }
+}
+
+@media (max-width:575px){
+    .column{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 768px) {
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+}
